@@ -1,0 +1,35 @@
+@forward "../utils/animations";
+
+@use "../themes/colours" as c;
+
+.skew-button-one:visited,
+.skew-button-one:link {
+  background-color: c.$dark-color;
+  color: c.$white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 2% 5%;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  border-bottom: solid 0.3rem hsl(20.4, 64.2%, 55.1%);
+}
+
+.skew-button-two:visited,
+.skew-button-two:link {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  background-color: c.$dark-color;
+  color: c.$white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 2% 15%;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  border-bottom: solid 0.3rem hsl(20.4, 64.2%, 55.1%);
+}
+
+.skew-button-one:hover,
+.skew-button-two:hover {
+  -webkit-animation: hover-link 0.2s ease-in forwards;
+  animation: hover-link 0.2s ease-in forwards;
+}

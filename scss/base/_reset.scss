@@ -1,0 +1,33 @@
+@use "../themes/colours" as c;
+@use "../themes/typography" as t;
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  background-color: c.$medium-color;
+  font-family: t.$main-font;
+  border-left: solid 0.5rem hsl(0, 67.2%, 23.9%);
+  border-right: solid 0.5rem hsl(0, 67.2%, 23.9%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.5% 19%;
+}
